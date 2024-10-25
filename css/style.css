@@ -1,0 +1,1302 @@
+/* Payawal, Kyle Eishley G. */
+@import url('https://fonts.cdnfonts.com/css/abhaya-libre-2');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+                
+
+@font-face {
+    font-family: Century;
+    src: url(../fonts/CENTURY.ttf);
+}
+
+@font-face {
+    font-family: Century Gothic;
+    src: url(../fonts/centurygothic.ttf);
+}
+
+@font-face {
+    font-family: Century Gothic Bold;
+    src: url(../fonts/centurygothic_bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Signika Negative", sans-serif, Arial;
+}
+
+/* CSS styles for header */
+
+#main-header {
+  display: flex;
+  justify-content:  flex-end;
+  align-items: center;
+  padding: 10px 100px;
+  background-color: #0D0D0D;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+
+.logo {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+header h1 {
+    color: #EFEAE0;
+    text-align: center;
+    font-size: 18px; 
+    float: left;
+}
+ 
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header nav ul li a {
+    font-family: Century Gothic, sans-serif;
+    color: #EFEAE0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+header nav ul li a:hover {
+    font-family: Century Gothic , sans-serif;
+    color: #c8b272;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header button {
+    padding: 9px 25px;
+    color: #c8b272;
+    background-color: transparent;
+    border: 2px solid #c8b272;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #EFEAE0;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* CSS Styles for Hero */
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    padding-left: 20%;
+    overflow: hidden;
+}
+
+#hero-container {
+    margin-bottom: 5%;
+}
+
+hr {
+    border: solid 1px #ffffff;
+    width: 150%;
+    margin-bottom: 2%;
+  }
+
+#hero-text {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 50;
+    text-transform: uppercase;
+    font-family: Century, 'Lora', sans-serif;
+    margin-bottom: 0;
+}
+
+#hero button {
+    padding: 9px 25px;
+    color: #c8b272;
+    background-color: transparent;
+    border: 2px solid #c8b272;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#hero button:hover {
+    background-color: #EFEAE0;
+}
+
+
+/* CSS Style for Services */
+
+.container-main {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#services {
+    height: 100vh;
+    scroll-margin-top: 100px;
+}
+
+#services img {
+    width: 155px;
+}
+
+#services .container-main {
+    margin: 60px 170px;
+}
+
+#services-title h1 {
+    display: block;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.services-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.page-title {
+    font-family: 'Century', 'Lora', sans-serif;
+    color: #0D0D0D;
+    font-size: 3.8em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container-main img {
+    color: #c8b272;
+}
+
+.container-main h2 {
+    font-family: Century Gothic Bold, sans-serif;
+    font-size: 32px;
+    color: #c8b272;
+    margin: 5px;
+}
+
+.container-main p {
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+}
+
+/* CSS Styles for Recent Works */
+
+#recent-works {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/photography.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+
+#recent-works .page-title{
+  color: #c8b272;
+  font-weight: 100;
+  font-size: 3.8em;
+}
+
+/* CSS Styles for Horizontal Scroll */
+
+body {
+    overscroll-behavior: none;
+    height: 100vh;
+    overflow-x: hidden ;
+  }
+  .container {
+    overscroll-behavior: none;
+    width: 500%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+.panel.align-top {
+    align-items: flex-start;
+  }
+
+  .panel .title-section {
+    position: absolute; 
+    top: 0;
+    left: 20%;
+    transform: translate(-50%, 0);
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: visible;
+    background-color: #fff;
+    width: 40%;
+    padding-left: 10%;
+    padding-top: 20%;
+    padding-bottom: 24%;
+    padding-right: 10%;
+  }
+
+  .title-section text {
+    justify-content: left;
+    padding-left: 40px;
+  }
+  .title-section h1 {
+    color: #0d0d0d;
+    text-align: left;
+    left: 10%;
+    font-family: Century, sans-serif;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+  .title-section .subtitle {
+    font-family: Century Gothic, sans-serif;
+    padding-bottom: 20%;
+    color: #C8B272;
+    text-transform: capitalize;
+  }
+
+  .title-section .description {
+    color: #0D0D0D;
+    font-family: Century Gothic, sans-serif;
+    font-size: 0.9em;
+    text-transform: capitalize;
+  }
+
+  .title-section .scroll-down-middle {
+    justify-content: left;
+  }
+
+  .panel i {
+    padding-top: 10%;
+    position: relative;
+    top: -4px;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    animation: arrowMove 1.5s ease-in-out infinite; 
+  }
+
+  @keyframes arrowMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+  .panel.description {
+    padding-bottom: 60px;
+  }
+  
+  .panel p, .panel li {
+    color: black;
+    font-weight: 400;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 0.3em 0 1em 0;
+  }
+  .panel p strong, .panel li strong {
+    color: white;
+    font-weight: 400;
+  }
+  .panel p code, .panel li code {
+    background-color: rgba(255,255,255,0.15);
+    padding: 2px 4px;
+    border-radius: 5px;
+  }
+  .panel li {
+    margin: 0;
+  }
+
+  .wedding {
+    background-image: url(../images/wedding1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wedding1 {
+    background-image: url(../images/wedding2.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wedding2 {
+    background-image: url(../images/wedding3.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wedding3 {
+    background-image: url(../images/wedding4.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .wedding4 {
+    background-image: url(../images/wedding5.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut {
+    background-image: url(../images/debut.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .debut1 {
+    background-image: url(../images/debut1.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut2 {
+    background-image: url(../images/debut2.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut3 {
+    background-image: url(../images/debut3.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut4 {
+    background-image: url(../images/debut4.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday {
+    background-image: url(../images/birthday.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday1 {
+    background-image: url(../images/birthday1.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday2 {
+    background-image: url(../images/birthday2.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday3 {
+    background-image: url(../images/birthday3.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday4 {
+    background-image: url(../images/birthday4.jpg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  /* h1, h2, p, li {
+    max-width: 800px;
+  } */
+  
+  /* SCROLL DOWN */ 
+  .scroll-down {
+    position: absolute; 
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: visible;
+  }
+
+  .scroll-down-middle {
+    color: #C8B272;
+    top: 60%;
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: visible;
+  }
+
+  .scroll-down-middle .arrow {
+    position: relative;
+    top: -4px;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    background-image: rgba(),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+    background-size: contain;
+  }
+
+  .scroll-down .arrow {
+    position: relative;
+    top: -4px;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+    background-size: contain;
+  }
+  
+  .arrow-right {
+    transform: rotate(-90deg);
+    position: relative;
+    top: -4px;
+    margin: 1rem auto;
+    width: 20px;
+    height: 20px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+    background-size: contain;
+  }
+
+  video {
+    width: 60%;
+    height: auto;
+  }
+
+  /* CSS for About Us Section */
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(#c8b272 75%,#EFEAE0 100%);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#about-container {
+  flex-direction: column;
+  background-color: #0d0d0d;
+  color: white;
+  width: 50%;
+  padding: 5%;
+}
+
+#about-container h1 {
+  color: #c8b272;
+  font-weight: 100;
+}
+
+#about-container p {
+  font-family: Century, sans-serif;
+  font-weight: 100;
+}
+
+/* CSS for Packages */
+
+#packages {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image:linear-gradient(#EFEAE0 75%, transparent 100%);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+
+table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: separate;
+  text-align: center;
+  background-color: transparent;
+  border-spacing: 20px 0;
+  margin: 25px;
+  font-family: Century Gothic, sans-serif;
+}
+
+th, td {
+  padding: 6px;
+  border: 1px solid #232323;
+  font-size: 1.3em;
+  color: #3a3028;
+}
+
+th {
+  background-color: #EFEAE0;
+  color: #0D0D0D;
+  font-size: 1.5rem;
+}
+
+#price td {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #EFEAE0;
+  background-color: #232323;
+  border-color: #232323;
+  padding: 15px;
+}
+
+td {
+  background-color: #EFEAE0;
+}
+
+td:hover {
+  background-color: #f0eae0;
+}
+
+#packages button {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 9px 25px;
+  color: #c8b272;
+  background-color: transparent;
+  border: 2px solid #c8b272;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 20px;
+}
+#packages button:hover {
+  background-color: #232323;
+}
+
+/* CSS Style for Book Us Now */
+
+#book {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/about1.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-margin-top: 100px;
+  font-family: Century Gothic, sans-serif;
+}
+
+#book .container-main{
+  max-width: 900px;
+  width: 100%;
+  background-color: #242424;
+  flex-direction: column;
+  padding: 50px 100px 30px;
+  border-radius: 50px;
+} 
+
+#book .page-title{
+  color: #C8B272;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+#book form .user-input1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-input1 .input-box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0 20px 0;
+}
+
+#book input, select, textarea {
+  font-family: Century Gothic, sans-serif;
+}
+
+.user-input1 input {
+  height: 40px;
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.user-input2 {
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.user-input2 select{
+  width: 100%;
+  margin-bottom: 40px;
+  height: 40px;
+  padding-left: 12px;
+}
+
+.user-input2 textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 120px;
+  padding: 12px;
+}
+
+.user-input2 #submit {
+  background: transparent;
+  border: 1px solid #C8B272;
+  border-radius: 50px;
+  padding: 10px 40px;
+  font-size: 1.5em;
+  color: #C8B272;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Century Gothic, sans-serif;
+  transition: all 0.3s ease 0s;
+}
+
+.user-input2 #submit:hover {
+  background-color: #EFEAE0;
+  color: #232323;
+}
+
+/* CSS Style for Footer */
+
+footer {
+  background-color: #0D0D0D;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social a  {
+  text-decoration: none;
+  padding: 3%;
+  margin: 50px 20px 30px;
+}
+
+.social a i {
+  font-size: 2.5em;
+  color: #C8B272;  
+  transition: all 0.3s ease 0s; 
+}
+
+.social a i:hover {
+  color: #EFEAE0;
+  font-size: 3em;
+}
+
+.footer-nav {
+  margin: 30px 0;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  align-items: center;
+  padding-top: 10px;
+}
+
+.footer-nav ul li a {
+  color: #EFEAE0;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: Century Gothic, sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-nav ul li a:hover {
+  color: #C8B272;
+}
+
+.footer-nav #book-now {
+  border: 2px solid #c8b272;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: all 0.3s ease 0s;
+}
+
+#footer-button {
+  color: #c8b272;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-nav #book-now:hover {
+  background-color: #EFEAE0;
+}
+
+.copyright {
+  padding: 20px;
+  text-align: center;    
+}
+
+.copyright p {
+  color: #EFEAE0;
+  text-transform: uppercase;
+  font-family: Century Gothic, sans-serif;
+  font-size: 0.8em;
+  justify-content: center;
+}
+
+/* =========================================== */
+/* Tablet Viewport (768px x 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #main-header {
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #EFEAE0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #0D0D0D;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .nav-links li {
+    margin: 16px 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .logo {
+    margin-left: 5%;
+  }
+
+   /* Hero */
+   hr {
+    border: solid 1px #ffffff;
+    width: 90%;
+    margin-bottom: 2%;
+  }
+
+  /* Services */
+  #services {
+    height: auto;
+  }
+
+  .container-main {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Recent Works */
+  .panel .title-section {
+    position: absolute; 
+    top: 0;
+    left: 20%;
+    transform: translate(-50%, 0);
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: visible;
+    background-color: #fff;
+    width: 40%;
+    padding-left: 10%;
+    padding-top: 50%;
+    padding-bottom: 60%;
+    padding-right: 10%;
+  }
+/* WEDDING */
+  .wedding1 {
+    background-image: url(../images/wedding2.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wedding2 {
+    background-image: url(../images/wedding3.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wedding3 {
+    background-image: url(../images/wedding4.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .wedding4 {
+    background-image: url(../images/wedding5.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* DEBUT */
+  .debut1 {
+    background-image: url(../images/debut1.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut2 {
+    background-image: url(../images/debut2.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut3 {
+    background-image: url(../images/debut3.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut4 {
+    background-image: url(../images/debut4.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* BIRTHDAY */
+  .birthday1 {
+    background-image: url(../images/birthday1.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday2 {
+    background-image: url(../images/birthday2.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday3 {
+    background-image: url(../images/birthday3.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday4 {
+    background-image: url(../images/birthday4.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  video {
+    width: 90%;
+    height: auto;
+  }
+
+   /* About Us */
+   #about-container {
+    flex-direction: column;
+    background-color: #0d0d0d;
+    color: white;
+    width: 90%;
+    padding: 5%;
+  }
+
+  /* Book Now */
+  #book .container-main{
+    max-width: 900px;
+    width: 80%;
+    background-color: #242424;
+    flex-direction: column;
+    padding: 50px 100px 30px;
+    border-radius: 50px;
+  } 
+
+  /* Footer */
+  .footer-nav ul li a {
+    color: #EFEAE0;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Century Gothic, sans-serif;
+    text-transform: uppercase;
+  }
+}
+/* =========================================== */
+/* Mobile Viewport */
+
+@media (max-width:768px ) {
+
+  /* CSS for Nav Bar */
+
+  #main-header {
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #EFEAE0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #0D0D0D;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .nav-links li {
+    margin: 16px 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .logo {
+    margin-left: 5%;
+  }
+
+  /* Hero */
+  hr {
+    border: solid 1px #ffffff;
+    width: 80%;
+    margin-bottom: 2%;
+  }
+
+  /* Services */
+  #services {
+    height: auto;
+  }
+
+  .container-main {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Recent Works */
+  .panel .title-section {
+    position: absolute; 
+    top: 0;
+    left: 20%;
+    transform: translate(-50%, 0);
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: visible;
+    background-color: #fff;
+    width: 40%;
+    padding-left: 10%;
+    padding-top: 60%;
+    padding-bottom: 60%;
+    padding-right: 10%;
+  }
+/* WEDDING */
+  .wedding1 {
+    background-image: url(../images/wedding2.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wedding2 {
+    background-image: url(../images/wedding3.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wedding3 {
+    background-image: url(../images/wedding4.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .wedding4 {
+    background-image: url(../images/wedding5.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* DEBUT */
+  .debut1 {
+    background-image: url(../images/debut1.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut2 {
+    background-image: url(../images/debut2.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut3 {
+    background-image: url(../images/debut3.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .debut4 {
+    background-image: url(../images/debut4.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* BIRTHDAY */
+  .birthday1 {
+    background-image: url(../images/birthday1.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday2 {
+    background-image: url(../images/birthday2.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday3 {
+    background-image: url(../images/birthday3.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .birthday4 {
+    background-image: url(../images/birthday4.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  video {
+    width: 90%;
+    height: auto;
+  }
+
+  /* About Us */
+  #about-container {
+    flex-direction: column;
+    background-color: #0d0d0d;
+    color: white;
+    width: 90%;
+    padding: 5%;
+  }
+
+  /* Book Now */
+  #book .container-main{
+    max-width: 900px;
+    width: 80%;
+    background-color: #242424;
+    flex-direction: column;
+    padding: 50px 100px 30px;
+    border-radius: 50px;
+  } 
+
+  /* Footer */
+  .footer-nav ul li a {
+    color: #EFEAE0;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Century Gothic, sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+/* =========================================== */
+/* Large Desktop Viewport */
+@media screen and (min-width: 1921px) {
+  .container-main {
+      width: 1920px;
+      margin: 0 auto;
+      height: auto;
+  }
+}
+
+/* =========================================== */
+/* Print */
+
+@media print {
+  * {
+      background-color: #fff;
+      color: #000;
+      justify-content: center;
+  }
+
+  #recent-works, .container, .panel {
+    display: none;
+    visibility: collapse;
+  }
+}
