@@ -481,10 +481,6 @@ body {
     padding: 10px;
   }
   
-  /* h1, h2, p, li {
-    max-width: 800px;
-  } */
-  
   /* SCROLL DOWN */ 
   .scroll-down {
     position: absolute; 
@@ -655,6 +651,10 @@ td:hover {
 }
 #packages button:hover {
   background-color: #232323;
+}
+
+.mobile-package {
+  display: none;
 }
 
 /* CSS Style for Book Us Now */
@@ -1058,10 +1058,13 @@ footer {
 /* Mobile Viewport */
 
 @media (max-width:768px ) {
+   * {
+    overflow-x: hidden;
+   }
 
   /* CSS for Nav Bar */
-
   #main-header {
+    width: 100vw;
     padding: 10px 20px;
   }
 
@@ -1125,10 +1128,18 @@ footer {
     margin-bottom: 2%;
   }
 
+  #hero-text {
+    font-size: 3rem;
+  }
+
   /* Services */
   #services {
     height: auto;
   }
+
+  .page-title {
+    font-size: 3rem;
+   }
 
   .container-main {
     display: flex;
@@ -1137,7 +1148,14 @@ footer {
     flex-direction: column;
   }
 
+  #services .container-main {
+    margin: 60px 30px;
+  }
+
   /* Recent Works */
+   #recent-works .page-title {
+    font-size: 3rem;
+   }
   .panel .title-section {
     position: absolute; 
     top: 0;
@@ -1149,10 +1167,10 @@ footer {
     font-size: 16px;
     overflow: visible;
     background-color: #fff;
-    width: 40%;
+    width: 50%;
     padding-left: 10%;
     padding-top: 60%;
-    padding-bottom: 60%;
+    padding-bottom: 120%;
     padding-right: 10%;
   }
 /* WEDDING */
@@ -1254,17 +1272,44 @@ footer {
     padding: 5%;
   }
 
+  /* Packages */
+
+  .mobile-package {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  table {
+    display: none;
+  }
+
   /* Book Now */
   #book .container-main{
     max-width: 900px;
     width: 80%;
     background-color: #242424;
     flex-direction: column;
-    padding: 50px 100px 30px;
+    padding: 50px 50px 30px;
     border-radius: 50px;
   } 
 
   /* Footer */
+  .social a {
+    margin: 50px 10px 30px;
+  }
+
+  .social a i {
+    font-size: 1.3em;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .footer-nav ul li a {
     color: #EFEAE0;
     margin: 20px;
@@ -1272,6 +1317,10 @@ footer {
     font-size: 0.8em;
     font-family: Century Gothic, sans-serif;
     text-transform: uppercase;
+  }
+
+  .footer-nav nav {
+    width: auto;
   }
 }
 
